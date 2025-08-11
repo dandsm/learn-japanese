@@ -135,6 +135,13 @@ function retry() {
 html, body, #app {
   height: 100%;
 }
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body{
   margin:0;
   padding: 0;
@@ -146,7 +153,8 @@ body{
   font-family: "Noto Sans JP", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display:grid;
+  align-items: center;
+  align-content: center;
   place-items:center;
 }
 
@@ -314,5 +322,15 @@ form > div{
 /* Reduce motion preference */
 @media (prefers-reduced-motion: reduce){
   *{ animation: none !important; transition: none !important; }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 90%;
+  }
+
+  form button {
+    margin-top: 2rem;
+  }
 }
 </style>
