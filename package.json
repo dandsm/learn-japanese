@@ -12,13 +12,15 @@
     "preview": "vite preview",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*"
+    "lint": "run-s lint:*",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.png"
   },
   "dependencies": {
     "vue": "^3.5.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
+    "@vite-pwa/assets-generator": "^1.0.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "eslint": "^9.31.0",
     "eslint-plugin-oxlint": "~1.8.0",
@@ -27,6 +29,7 @@
     "npm-run-all2": "^8.0.4",
     "oxlint": "~1.8.0",
     "vite": "npm:rolldown-vite@latest",
+    "vite-plugin-pwa": "^1.0.2",
     "vite-plugin-vue-devtools": "^8.0.0"
   }
 }
