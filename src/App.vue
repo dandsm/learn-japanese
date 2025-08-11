@@ -137,6 +137,7 @@ html, body, #app {
 }
 body{
   margin:0;
+  padding: 0;
   background:
     radial-gradient(1200px 800px at 10% -10%, rgba(110,168,254,.15), transparent 40%),
     radial-gradient(1000px 600px at 110% 10%, rgba(142,240,194,.12), transparent 40%),
@@ -147,7 +148,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
   display:grid;
   place-items:center;
-  padding: 28px;
 }
 
 /* -------------------------------------------------------

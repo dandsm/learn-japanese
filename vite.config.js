@@ -20,7 +20,7 @@ export default defineConfig({
         "start_url": "/",
         "scope": "/",
         "display": "standalone",
-        "background_color": "#111111",
+        "background_color": "#ffffff",
         "theme_color": "#ffffff",
         "icons": [
           {
